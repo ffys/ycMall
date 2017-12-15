@@ -44,9 +44,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  $maincolor: #30908f;
 
-  .app-header {
-    background-color: $maincolor;
-  }
 </style>
