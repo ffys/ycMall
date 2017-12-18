@@ -15,6 +15,8 @@ Vue.component(Button.name, Button)
 Vue.component(Cell.name, Cell)
 */
 
+//  
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
