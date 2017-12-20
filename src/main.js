@@ -7,19 +7,6 @@ import router from './router'
 import store from './store'
 import mint from 'mint-ui'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Vue.use(mint)
 /*
 import {Button, Cell} from 'mint-ui'
@@ -29,7 +16,7 @@ Vue.component(Cell.name, Cell)
 */
 
 //  引入mockjs
-require('./mock/mock')
+require('./mock/mock.js')
 
 Vue.config.productionTip = false
 

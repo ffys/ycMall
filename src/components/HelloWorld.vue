@@ -25,15 +25,15 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  },
-  created() {
+  }
+ /*  created() {
     this.setName()
   },
   methods:{
     setName: function () {
-      
+
     }
-  }
+  } */
 }
 </script>
 

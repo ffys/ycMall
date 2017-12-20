@@ -12,7 +12,7 @@ export default new Router({
       path: '/',
       name: 'index',
       component (resolve) {
-        require(['@/components/index'], resolve)
+        require(['@/pages/Index'], resolve)
       }
     },
     {
