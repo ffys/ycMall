@@ -5,13 +5,13 @@
                  class="app-header">
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
-
+      <i class="iconfont icon-shouchang"></i>
       <mt-tabbar
         fixed
         value=""
       >
         <mt-tab-item id="外卖">
-          <img slot="icon" icon="more">
+
           外卖
         </mt-tab-item>
         <mt-tab-item id="订单">
