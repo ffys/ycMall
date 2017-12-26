@@ -1,43 +1,24 @@
 <template>
-    <div class="page">
+    <div class="home">
       <mt-header fixed
                  title="YC MALL"
                  class="app-header">
         <mt-button icon="more" slot="right"></mt-button>
       </mt-header>
+      <yc-swipe></yc-swipe>
 
-      <i class="iconfont icon-shouye"></i>
-      <mt-tabbar
-        fixed
-        value="首页"
-      >
-        <mt-tab-item id="首页" is-selected>
-          <i slot='icon' class="iconfont icon-shouye"></i>
-          首页
-        </mt-tab-item>
-        <mt-tab-item id="分类">
-          <i slot='icon' class="iconfont icon-fenlei"></i>
-          分类
-        </mt-tab-item>
-        <mt-tab-item id="搜索">
-        <i slot='icon' class="iconfont icon-sousuo"></i>
-        搜索
-      </mt-tab-item>
-        <mt-tab-item id="购物车">
-          <i slot='icon' class="iconfont icon-cart"></i>
-          购物车
-        </mt-tab-item>
-        <mt-tab-item id="我的">
-          <i slot='icon' class="iconfont icon-wode"></i>
-          我的
-        </mt-tab-item>
-      </mt-tabbar>
+
 
     </div>
 </template>
 
 <script>
+  import swipe from '@/components/swipe'
+
   export default {
+    components: {
+      'yc-swipe': swipe
+    },
     name: 'page',
     data () {
 

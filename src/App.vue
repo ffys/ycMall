@@ -1,35 +1,40 @@
 <template>
+
   <div id="app">
-    <router-view></router-view>
+    <router-view>
+
+    </router-view>
+    <yc-footer></yc-footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import footer from '@/components/Footer'
+
+  export default {
+    name: 'app',
+    components: {
+      'yc-footer': footer
+    }
+  }
 </script>
+<style>
+  @import "//at.alicdn.com/t/font_516683_x8vegxbsvduhxgvi.css";
+</style>
+<style lang="scss">
+  @import "scss/common.scss";
 
-<style >
-  @import "//at.alicdn.com/t/font_516683_dgy9c6fq6blf2yb9.css";
-  .iconfont{
-    font-size: 28px;
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
   }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-/*$maincolor: #30908f;
-
-.app-header {
-  background-color: $maincolor;
-}*/
   .app-header {
-    background-color:#30908f;;
+    background-color: $maincolor;
   }
+
 </style>
