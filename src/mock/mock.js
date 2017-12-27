@@ -17,4 +17,4 @@ const prduceNewsData = function () {
 }
 
 // Mock.mock(url,post/get,返回的数据);
-Mock.mock('/api/news', 'post', prduceNewsData)
+Mock.mock(/\/banner/, 'post', prduceNewsData)
