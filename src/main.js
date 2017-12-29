@@ -16,7 +16,7 @@ Vue.component(Cell.name, Cell)
 */
 
 //  引入mockjs
-require('./mock/mock.js')
+require('./mock/index')
 
 Vue.config.productionTip = false
 

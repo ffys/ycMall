@@ -1,12 +1,16 @@
 <template>
-    <div class="Title">
-
+    <div class="header">
+      <mt-header fixed
+                 title="YC MALL"
+                 class="app-header">
+        <mt-button icon="more" slot="right"></mt-button>
+      </mt-header>
     </div>
 </template>
 
 <script>
   export default {
-    name: 'Title',
+    name: 'header',
     data () {
 
     }

@@ -1,6 +1,7 @@
 <template>
 
   <div id="app">
+    <yc-header></yc-header>
     <router-view>
 
     </router-view>
@@ -10,11 +11,13 @@
 
 <script>
   import footer from '@/components/Footer'
+  import header from '@/components/header'
 
   export default {
     name: 'app',
     components: {
-      'yc-footer': footer
+      'yc-footer': footer,
+      'yc-header': header
     }
   }
 </script>

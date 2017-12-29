@@ -1,14 +1,6 @@
 <template>
     <div class="home">
-      <mt-header fixed
-                 title="YC MALL"
-                 class="app-header">
-        <mt-button icon="more" slot="right"></mt-button>
-      </mt-header>
-      <yc-swipe></yc-swipe>
-
-
-
+      <yc-swipe :banner-list="bannerList"></yc-swipe>
     </div>
 </template>
 
@@ -21,7 +13,30 @@
     },
     name: 'page',
     data () {
-
+      return {
+        bannerList: [
+          {
+            bannerid: 1,
+            bannerUrl: '',
+            bannerImg: '../src/assets/images/v_01.jpg'
+          },
+          {
+            bannerid: 2,
+            bannerUrl: '',
+            bannerImg: '../src/assets/images/v_02.jpg'
+          },
+          {
+            bannerid: 3,
+            bannerUrl: '',
+            bannerImg: '../src/assets/images/v_03.jpg'
+          },
+          {
+            bannerid: 4,
+            bannerUrl: '',
+            bannerImg: '../src/assets/images/v_04.jpg'
+          }
+        ]
+      }
     }
   }
 </script>
