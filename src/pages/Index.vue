@@ -6,6 +6,7 @@
 
 <script>
   import swipe from '@/components/swipe'
+  import api from '@/api/api.js'
 
   export default {
     components: {
@@ -37,6 +38,19 @@
           }
         ]
       }
+    },
+    methods: {
+      getBanner: function () {
+        api.bannerList().then(response => {
+          this.bannerList = response.data
+          console.log(response.data)
+        }).catch(err => {
+          console.log(err)
+        })
+      }
+    },
+    created () {
+      this.getBanner()
     }
   }
 </script>
